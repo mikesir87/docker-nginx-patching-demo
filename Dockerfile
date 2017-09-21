@@ -5,7 +5,7 @@ WORKDIR /src
 RUN apt-get update && \
     apt-get install -y curl make gcc libpcre3-dev zlib1g-dev && \
   # install openssl
-    curl -Lo openssl.tar.gz https://github.com/openssl/openssl/archive/OpenSSL_1_1_0f.tar.gz && \
+    curl -Lo openssl.tar.gz https://github.com/openssl/openssl/archive/OpenSSL_1_0_1u.tar.gz && \
     tar zxf openssl.tar.gz && \
     mv openssl-* openssl && \
     cd openssl && \
